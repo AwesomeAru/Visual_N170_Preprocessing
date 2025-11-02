@@ -1,0 +1,49 @@
+%Matlab script to plot 6 grand average ERPs together as a single figure
+clear; clc; close all;
+
+%Location of the main study directory
+DIR = fileparts(fileparts(fileparts(mfilename('fullpath')))); 
+
+%Location of the folder that contains this script and any associated processing files
+Current_File_Path = fileparts(mfilename('fullpath'));
+
+%Open EEGLAB and ERPLAB Toolboxes  
+[ALLEEG EEG CURRENTSET ALLCOM] = eeglab;
+
+% === Step 1: Load the two ERPsets ===
+%Load the low-pass filtered grand average ERP waveforms outputted from Script #9 in .erp ERPLAB file format
+ERP1 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or2.erp', 'filepath', Current_File_Path);
+ERP2 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or8.erp', 'filepath', Current_File_Path);        
+ERP3 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or2_0_5Hz.erp', 'filepath', Current_File_Path);
+ERP4 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or8_0_5Hz.erp', 'filepath', Current_File_Path);        
+ERP5 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or2_1Hz.erp', 'filepath', Current_File_Path);
+ERP6 = pop_loaderp('filename', 'GA_N170_erp_ar_diff_waves_lpfilt_or8_1Hz.erp', 'filepath', Current_File_Path);        
+
+figure; hold on;
+% === Step 2: Choose channel(s) to plot ===
+chan = 8; % Example: Cz or any index you want
+ch_label = ERP1.chanlocs(chan).labels;
+bin  = 5;  
+
+% === Step 3: Plot ===
+plot(ERP1.times, squeeze(ERP1.bindata(chan,:,bin)), 'k', 'LineWidth', 1.5);
+plot(ERP2.times, squeeze(ERP2.bindata(chan,:,bin)), 'b', 'LineWidth', 1.5);
+plot(ERP3.times, squeeze(ERP3.bindata(chan,:,bin)), 'g', 'LineWidth', 1.5);
+plot(ERP4.times, squeeze(ERP4.bindata(chan,:,bin)), 'r', 'LineWidth', 1.5);
+plot(ERP5.times, squeeze(ERP5.bindata(chan,:,bin)), 'm', 'LineWidth', 1.5);
+plot(ERP6.times, squeeze(ERP6.bindata(chan,:,bin)), 'c', 'LineWidth', 1.5);
+
+% === Step 4: Add visible x and y axes ===
+xline(0, 'k--', 'LineWidth', 1);    % vertical line at 0 ms
+yline(0, 'k--', 'LineWidth', 1);    % horizontal line at 0 µV
+
+% === Step 5: Customize the plot ===
+xlabel('Time (ms)');
+ylabel('Amplitude (\muV)');
+title(['ERP Comparison at Channel: ' ch_label]);
+legend({'0.1Hz, 12dB/oct','0.1Hz, 48dB/oct', '0.5Hz, 12dB/oct', '0.5Hz, 48dB/oct', '1Hz, 12dB/oct', '1Hz, 48dB/oct'}, 'Location', 'Best');
+grid on;
+xlim([-200 800]);  % adjust per your epoch window
+ylim([-4 2]);    % adjust per your data range
+
+hold off;
