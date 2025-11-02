@@ -34,9 +34,10 @@ In this task, an image of a face, car, scrambled face, or scrambled car was pres
 In the analysis of electrophysiological data signal-to-noise ratio has to be improved by all adequate means. Priority should be given to the collection of higher numbers of trials and reduction of noise in data recording. However, in most situations filtering will nevertheless be necessary to appropriately analyze electrophysiological data. In these situations it is essential to know and understand the effects of filtering on the data and cautiously adjust filter settings (cutoff frequencies, roll-off, attenuation, and ripple) to the signal of interest and the particular application, e.g., by evaluating the effects of different filters on the data. Especially the high-pass filtering of slow ERP components or blinks, as commonly observed in the literature, might seriously affect ERP time course and amplitudes. [1]
 
 ## Procedure - 
-![Flowchart](./ERP.drawio.png)
+![Flowchart](./images/ERP.drawio.png)
 
 ## Results 
+![Result](./images/n170_results_table.png)
 
 ## Conclusion - 
 
