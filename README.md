@@ -1,13 +1,18 @@
 # Visual_N170_Preprocessing
 
-## Objective - 
-In the analysis of electrophysiological data signal-to-noise ratio has to be improved by all adequate means. Priority should be given to the collection of higher numbers of trials and reduction of noise in data recording. However, in most situations filtering will nevertheless be necessary to appropriately analyze electrophysiological data. In these situations it is essential to know and understand the effects of filtering on the data and cautiously adjust filter settings (cutoff frequencies, roll-off, attenuation, and ripple) to the signal of interest and the particular application, e.g., by evaluating the effects of different filters on the data. Especially the high-pass filtering of slow ERP components or blinks, as commonly observed in the literature, might seriously affect ERP time course and amplitudes. [1]
+## ERP
+Event Related Potential(ERPs) are primarily generated in cortical pyramidal cells, where extracellular voltages produced by thousands of neurons sum together and are conducted instantaneously to the scalp. ERPs therefore provide a direct measure of neural activity with the millisecond-level temporal resolution necessary to isolate the neurocognitive operations that rapidly unfold following a stimulus, response, or other event.
 
-## Visual Perception and the N170 - 
-In this task, an image of a face, car, scrambled face, or scrambled car was presented on each trial in the center of the screen, and participants responded whether the stimulus was an “object” (face or car) or a “texture” (scrambled face or scrambled car). 
-
-
-## Experiment -
+## About ERP Core -
+The ERP CORE—a Compendium of Open Resources and Experiments for human ERP research—consists of optimized paradigms, experiment control scripts, EEG data, analysis pipelines, data processing scripts, and a broad set of results for seven widely used ERP components: 
+- N170
+- mismatch negativity (MMN)
+- N2pc
+- N400
+- P3
+- lateralized readiness potential (LRP)
+- error related negativity (ERN).
+All materials are freely available at [ERP Core](https://doi.org/10.18115/D5JW4R).
 The data for the experiment was taken from ERP CORE website [2]. The details of the N170 Visual Perception task is as folllows - 
 
 ### Participants
@@ -22,15 +27,21 @@ To measure amplitude and latency of parent / difference waves, the following mea
 - Mean amplitude
 - Peak amplitude
 
+## Visual Perception and the N170 - 
+In this task, an image of a face, car, scrambled face, or scrambled car was presented on each trial in the center of the screen, and participants responded whether the stimulus was an “object” (face or car) or a “texture” (scrambled face or scrambled car). 
+
+## Objective - 
+In the analysis of electrophysiological data signal-to-noise ratio has to be improved by all adequate means. Priority should be given to the collection of higher numbers of trials and reduction of noise in data recording. However, in most situations filtering will nevertheless be necessary to appropriately analyze electrophysiological data. In these situations it is essential to know and understand the effects of filtering on the data and cautiously adjust filter settings (cutoff frequencies, roll-off, attenuation, and ripple) to the signal of interest and the particular application, e.g., by evaluating the effects of different filters on the data. Especially the high-pass filtering of slow ERP components or blinks, as commonly observed in the literature, might seriously affect ERP time course and amplitudes. [1]
+
 ## Procedure - 
 ![Flowchart](./ERP.drawio.png)
 
-Results - 
+## Results 
 
-Conclusion - 
+## Conclusion - 
 
-Additional - scripts used for the project 
+## Additional - scripts used for the project
 
-References - 
+## References - 
 [1] Widmann, Andreas, and Erich Schröger. "Filter effects and filter artifacts in the analysis of electrophysiological data." Frontiers in psychology 3 (2012): 233.
 [2] Kappenman, Emily S., et al. "ERP CORE: An open resource for human event-related potential research." NeuroImage 225 (2021): 117465.
