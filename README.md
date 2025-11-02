@@ -38,6 +38,7 @@ In the analysis of electrophysiological data signal-to-noise ratio has to be imp
 
 ## Results 
 ![Result](./images/n170_results_table.png)
+key electrode sites of interest (P7, P8, PO7, PO8, O1, O2) 
 
 ## Conclusion - 
 
