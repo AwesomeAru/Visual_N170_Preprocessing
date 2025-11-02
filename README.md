@@ -16,7 +16,7 @@ The ERP Core dataset tested 40 participants (25 female, 15 male) however, a subs
 Recordings in the original ERP Core experiment were taken from 30 scalp electrodes placed according to the International 10/20 System (FP1, F3, F7, FC3, C3, C5, P3, P7, P9, PO7, PO3, O1, Oz, Pz, CPz, FP2, Fz, F4, F8, FC4, FCz, Cz, C4, C6, P4, P8, P10, PO8, PO4, O2). All signals were low-pass filtered using a fifth order sinc filter with a half-power cutoff at 204.8 Hz and then digitized at 1024 Hz with 24 bits of resolution. 
 
 ## Procedure - 
-![Flowchart](./ERP.drawio)
+![Flowchart](./ERP.drawio.png)
 
 Results - 
 
