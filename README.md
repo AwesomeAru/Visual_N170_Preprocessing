@@ -40,12 +40,12 @@ In the analysis of electrophysiological data signal-to-noise ratio has to be imp
 ![Result](./images/n170_results_table.png)
 key electrode sites of interest (P7, P8, PO7, PO8, O1, O2) 
 
-![Result](./images/gavg_ at_O1.png)
-![Result](./images/gavg_ at_O2.png)
-![Result](./images/gavg_ at_P7.png)
-![Result](./images/gavg_ at_P8.png)
-![Result](./images/gavg_ at_PO7.png)
-![Result](./images/gavg_ at_PO8.png)
+![Result](./images/gavg_at_O1.png)
+![Result](./images/gavg_at_O2.png)
+![Result](./images/gavg_at_P7.png)
+![Result](./images/gavg_at_P8.png)
+![Result](./images/gavg_at_PO7.png)
+![Result](./images/gavg_at_PO8.png)
 
 ## Conclusion - 
 
