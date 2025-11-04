@@ -21,11 +21,11 @@ The ERP Core dataset tested 40 participants (25 female, 15 male) however, a subs
 Recordings in the original ERP Core experiment were taken from 30 scalp electrodes placed according to the International 10/20 System (FP1, F3, F7, FC3, C3, C5, P3, P7, P9, PO7, PO3, O1, Oz, Pz, CPz, FP2, Fz, F4, F8, FC4, FCz, Cz, C4, C6, P4, P8, P10, PO8, PO4, O2). All signals were low-pass filtered using a fifth order sinc filter with a half-power cutoff at 204.8 Hz and then digitized at 1024 Hz with 24 bits of resolution. 
 ### Amplitude and Latency Measures
 To measure amplitude and latency of parent / difference waves, the following measures were calculated
-- 50% area latency - explain 
-- Onset latency
-- Peak latency
-- Mean amplitude
-- Peak amplitude
+- 50% area latency - the time point that divides the area of the waveform above/ below the zero line into two equal halves, for a given measurement window (relatively insensitive to high frequency noise)
+- Onset latency - the time point that divides the area of the waveform into 15% of the total area of the waveform for a given measurement window
+- Peak latency - the latency at which peak voltage is recorded in the measurement window
+- Mean amplitude - the mean voltage during the measurement window
+- Peak amplitude - the peak voltage during the measurement window
 
 ## Visual Perception and the N170 - 
 In this task, an image of a face, car, scrambled face, or scrambled car was presented on each trial in the center of the screen, and participants responded whether the stimulus was an “object” (face or car) or a “texture” (scrambled face or scrambled car). 
@@ -39,6 +39,8 @@ In the analysis of electrophysiological data signal-to-noise ratio has to be imp
 ## Results 
 ![Result](./images/n170_results_table.png)
 key electrode sites of interest (P7, P8, PO7, PO8, O1, O2) 
+
+
 
 ## Conclusion - 
 
