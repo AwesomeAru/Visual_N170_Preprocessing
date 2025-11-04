@@ -40,8 +40,7 @@ In this task, an image of a face, car, scrambled face, or scrambled car was pres
 
 
 ### Bin description
-b1 = Faces, Correct
-b2 = Cars, Correct
+b1 = Faces, Correct  b2 = Cars, Correct
 b3 = Scrambled Faces, Correct
 b4 = Scrambled Cars, Correct
 b5 = (b1 - b2) label Faces minus Cars
