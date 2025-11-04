@@ -40,13 +40,14 @@ In this task, an image of a face, car, scrambled face, or scrambled car was pres
 
 
 ### Bin description
-b1 = Faces, Correct  b2 = Cars, Correct
-b3 = Scrambled Faces, Correct
-b4 = Scrambled Cars, Correct
-b5 = (b1 - b2) label Faces minus Cars
-b6 = (b1 - b3) label Faces minus Scrambled Faces
-b7 = (b2 - b4) label Cars minus Scrambled Cars
-b8 = (b3 - b4) label Scrambled Faces minus Scrambled Cars
+b1 = Faces, Correct  
+b2 = Cars, Correct   
+b3 = Scrambled Faces, Correct   
+b4 = Scrambled Cars, Correct   
+b5 = (b1 - b2) label Faces minus Cars   
+b6 = (b1 - b3) label Faces minus Scrambled Faces   
+b7 = (b2 - b4) label Cars minus Scrambled Cars   
+b8 = (b3 - b4) label Scrambled Faces minus Scrambled Cars   
 b9 = (b7 - b8) label (Faces minus Cars) minus (Scrambled Faces minus Scrambled Cars)
 
 ## Results 
